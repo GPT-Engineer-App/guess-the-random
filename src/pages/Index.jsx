@@ -12,7 +12,7 @@ const Index = () => {
     const userGuess = parseInt(userNumber, 10);
     if (userGuess === randomNumber) {
       toast({
-        title: "Congratulations!",
+        title: "Congratulations! 🎉",
         description: "You've guessed the right number!",
         status: "success",
         duration: 5000,
@@ -20,7 +20,7 @@ const Index = () => {
       });
     } else {
       toast({
-        title: "Oops!",
+        title: "Oops! 🤔",
         description: `Wrong guess! The correct number was ${randomNumber}.`,
         status: "error",
         duration: 5000,
@@ -40,7 +40,7 @@ const Index = () => {
         <Box>
           <Input placeholder="Enter a number" maxWidth="300px" value={userNumber} onChange={handleInputChange} type="number" min={1} max={10} />
         </Box>
-        <Button colorScheme="blue" onClick={checkNumber}>
+        <Button colorScheme="purple" onClick={checkNumber}>
           Check My Guess
         </Button>
       </VStack>
